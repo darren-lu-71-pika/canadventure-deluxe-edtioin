@@ -7,7 +7,7 @@ const nextButton = document.getElementById('nextButton');
 
 // 定义每一项的选项内容
 const steps = [
-    { text: "在你的好友呂協助之下，你到達了桃園機場，並且跟你的女朋友ET告別，讓她成為了你的前女友。", image: "https://i0.wp.com/godiscovertoday.com/wp-content/uploads/2021/07/IMG-1012-r.jpg" },
+    { text: "蕭：謝謝啦，呂！還有ET，遠距離應該沒辦法了，就好聚好散吧！", image: "https://photo.travelking.com.tw/scenery/A13E0D24-C211-4DA6-A092-00679E7C4A54_d.jpg" },
     { text: "你在加拿大拉麵店找到了工作，結交到了一群豬朋狗友（他們都比不上呂）。", image: "https://i0.wp.com/godiscovertoday.com/wp-content/uploads/2021/07/IMG-1012-r.jpg" },
     { text: "你碰到讓你怦然心動的女孩，她是？", image: "https://i0.wp.com/godiscovertoday.com/wp-content/uploads/2021/07/IMG-1012-r.jpg", options: ["哈魯", "AOI"] },
     { text: "你們交往不順利，最後還是分手了。", image: "https://i0.wp.com/godiscovertoday.com/wp-content/uploads/2021/07/IMG-1012-r.jpg" },
