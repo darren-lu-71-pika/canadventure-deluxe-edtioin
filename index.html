@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加拿大冒險遊戲</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #game-container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background: #ddd;
+        }
+
+        #text {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .options, #nextButton {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .options button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>歡迎來到加拿大冒險！</h1>
+        <img id="image" src="" alt="冒險場景" />
+        <p id="text"></p>
+        
+        <!-- 选项按钮 -->
+        <div class="options">
+            <button onclick="chooseOption('A')">A</button>
+            <button onclick="chooseOption('B')">B</button>
+        </div>
+
+        <!-- 下一页按钮 -->
+        <button id="nextButton">下一頁</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
