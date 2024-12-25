@@ -52,7 +52,9 @@
         .options, #nextButton {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            align-items: center; /* 確保垂直居中 */
+            gap: 10px; /* 按鈕之間的間距 */
+            margin-top: 20px;
         }
 
         button {
@@ -83,12 +85,12 @@
         
         <!-- 选项按钮 -->
         <div class="options">
-            <button onclick="chooseOption('A')">A</button>
-            <button onclick="chooseOption('B')">B</button>
+            <button onclick="chooseOption('A')">選項 A</button>
+            <button onclick="chooseOption('B')">選項 B</button>
         </div>
 
         <!-- 下一页按钮 -->
-        <button id="nextButton">下一頁</button>
+        <button id="nextButton">下個月份</button>
     </div>
     <script src="game.js"></script>
 </body>
